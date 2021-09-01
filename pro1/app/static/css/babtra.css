@@ -1,0 +1,77 @@
+* button styling */
+        .button {
+  padding: 10px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  color:white;
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #dbe5eb;
+}
+/* button hover styling */
+          .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(228, 13, 13, 0.19);
+            color: #fff;
+            text-decoration: none;
+          }
+/* main grid container- divided into 3 equal columns, 1:1:1 ratio (fractional unit) */
+        .container{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;   
+            /* default  */
+            grid-template-rows: auto auto 400px auto auto auto;         
+            margin-left: 5%;
+            margin-right: 5%;
+                                               
+        }
+/* top right grid containing login and register buttons  
+justif-self =end  to place buttons on the right most side*/       
+       
+        .buttonsgrid{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            justify-self: end; 
+            align-self: center;  
+                   
+        }
+/* home,contact,course navigation bar style and grid classes */
+        .menu_bar_div{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #29487d;
+            color: white;            
+
+        }          
+      
+/* inline grid to make li horizontally aligned */
+        ul{
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr;        
+            grid-gap:1em;
+            /* to remove bullets */
+            list-style: none;  
+        }
+        .centerbanner{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+          
+        .bluehead{
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        .footer{
+            
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-gap:1em;
+        }
